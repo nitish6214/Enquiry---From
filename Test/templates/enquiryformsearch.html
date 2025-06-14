@@ -1,0 +1,51 @@
+<html>
+	<style>
+        body{
+            background-color:rgb(229, 201, 215);
+
+        }
+	</style>
+<center>
+     <table border="2" bgcolor=#ebd9ab>
+		<tr>
+           <th colspan=14<marquee>GET IT PROJECT PVT.LTD</th></marquee>
+		</tr>
+	  <tr>
+ 		<th bgcolor=#cce0df>S.NO:</th>
+		<th bgcolor=#abd6bc>NAME:</th>
+	    <th bgcolor=#cdf7ef>D.O.B:</th>
+	    <th bgcolor=#abd6bc>GENDER:</th>
+		<th bgcolor=#d3f2e3>FATHER'S NAME:</th>
+		<th bgcolor=#adedce>CORRESPONDENCE ADDRESS:</th>
+		<th bgcolor=#64d1f5>CONTACT:</th>
+	    <th bgcolor=#e4f2c4>EMAIL ID:</th>
+	    <th bgcolor=#a19895>EDUCATION QUALIFICATION:</th>
+		<th bgcolor=#be8fdb>SCHOOL/COLLEGE:</th>
+	    <th bgcolor=#f0ea81>COURSE INTERESTED IN:</th>
+	    <th bgcolor=#ebdac7>DATE:</th>
+		<th bgcolor=#dceff5>COUNSELED BY:</th>
+	    <th bgcolor=#e1cef0>SIGNATURE OF STUDENT:</th>
+	</tr>
+  	{%for col in data%}
+		<tr>
+			<td>{{col[0]}}</td>
+			<td>{{col[1]}}</td>
+			<td>{{col[2]}}</td>
+			<td>{{col[3]}}</td>
+			<td>{{col[4]}}</td>
+			<td>{{col[5]}}</td>
+			<td>{{col[6]}}</td>
+			<td>{{col[7]}}</td>
+			<td>{{col[8]}}</td>
+			<td>{{col[9]}}</td>
+			<td>{{col[10]}}</td>
+			<td>{{col[11]}}</td>
+			<td>{{col[12]}}</td>
+			<td>{{col[13]}}</td>
+		</tr>
+	{% endfor %}
+	<input type="button" value="Print" onclick="window.print()">
+ </table>
+</center>	
+</body>
+</html>

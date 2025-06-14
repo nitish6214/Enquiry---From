@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <style>
+    
+    button, input[type="submit"], input[type="button"]
+     {
+        background-color:rgb(73, 227, 68);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+    .button-container
+     {
+        text-align: center;
+        margin-top: 10px;
+     }
+        .img{
+            background-image:url("5.jpg");
+            background-repeat:no-repeat;
+            background-size:cover:
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 1px 2px;
+            margin: 8px 0;
+            box-sizing: border-box;
+          }
+        
+    </style>
+</head>
+
+    <form action="/submit" name=f method="POST">    
+      <center>
+        <table border=2 bgcolor=#c6eef7>
+            <tr>
+                <th rowspan=16 width="100" bgcolor=#ebedf5>E<br><br><br>N<br><br><br>Q<br><br><br>U<br><br><br>I<br><br><br>R<br><br><br>Y<br><br><br>F<br><br><br>O<br><br><br>R<br><br><br>M </th>
+            </tr>
+            <tr>
+           <th colspan=2 bgcolor=#b3e3e2><marquee>GET IT PROJECT PVT.LTD</marquee></th>
+            </tr>
+            <tr>
+                <th bgcolor=#e87c74>S.NO:</th>
+                <th><input type=text name=t1></th>
+            </tr>
+            <tr>
+                <th bgcolor=#f0ea81>NAME:</th>
+                <th><input type=text name=t2></th>
+            </tr>
+            <tr>
+                <th bgcolor=#b2a1e3>D.O.B:</th>
+                <th><input type=DATE name=t3></th>
+            </tr>
+            <tr>
+                <th bgcolor=#75eba2>GENDER:</th>
+                <th><input type=text name=t4></th>
+            </tr>
+            <tr>
+                <th bgcolor=#abd6bc>FATHER'S NAME:</th>
+                <th><input type=text name=t5></th>
+            </tr>
+            <tr>
+                <th bgcolor=#ddb9ed>CORRESPONDENCE ADDRESS:</th>
+                <th><input type=text name=t6></th>
+            </tr>
+            <tr>
+                <th bgcolor=#f0d1e6>CONTACT:</th>
+                <th><input type=text name=t7></th>
+            </tr>
+            <tr>
+                <th bgcolor=#7cdecc>EMAIL ID:</th>
+                <th><input type=text name=t8></th>
+            </tr>
+            <tr>
+                <th bgcolor=#64d1f5>EDUCATION QUALIFICATION:</th>
+                <th><input type=text name=t9></th>
+            </tr>
+            <tr>
+                <th bgcolor=#057aa1>SCHOOL/COLLEGE:</th>
+                <th><input type=text name=t10></th>
+            </tr>
+            <tr>
+                <th  bgcolor=#95aeed>COURSE INTERESTED IN:</th>
+                <th><input type=text name=t11></th>
+            </tr>
+            <tr>
+                <th bgcolor=#be8fdb>DATE:</th>
+                <th><input type=DATE name=t12></th>
+            </tr>
+            <tr>
+                <th bgcolor=#74f2b5>COUNSELED BY:</th>
+                <th><input type=text name=t13></th>
+            </tr>
+            <tr>
+                <th bgcolor=#e1cef0>SIGNATURE OF STUDENT:</th>
+                <th><input type=file name=t14></th>
+            </tr>
+            <tr>
+                <body class=img>
+                <th colspan=4><input type="button" value="New" onclick=a()>
+                    <input type="submit" value="Save" name=b1>
+                    <input type="submit" value="Allsearch" name=b1>
+                    <input type="submit" value="Psearch" name=b1>
+                    <input type="submit" value="Delete" name=b1>
+                    <input type="submit" value="Update" name=b1></th>
+              </tr>
+             
+        </table>
+    </center>
+</body>
+<script>
+    function a()
+    {
+        f.t1.value=""
+        f.t2.value=""
+        f.t3.value=""
+        f.t4.value=""
+        f.t5.value=""
+        f.t6.value=""
+        f.t7.value=""
+        f.t8.value=""
+        f.t9.value=""
+        f.t10.value=""
+        f.t11.value=""
+        f.t12.value=""
+        f.t13.value=""
+        f.t14.value=""
+    }
+</script

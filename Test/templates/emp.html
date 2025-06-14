@@ -1,0 +1,47 @@
+
+<body>
+    <form action="/submit" name=f method="POST">
+        <table border=2>
+            <tr>
+                <th>Employee id </th>
+                <th><input type=text name=t1></th>
+            </tr>
+            <tr>
+                <th>name</th>
+                <th><input type=text name=t2></th>
+            </tr>
+            <tr>
+                <th>Salary</th>
+                <th><input type=text name=t3></th>
+            </tr>
+            <tr>
+                <th>New salarry</th>
+                <th><input type=text name=t4></th>
+            </tr>
+            <tr>
+                <th colspan=2><input type=button value="New" onclick=a()>
+                         <input type=button value="calculate" onclick=b()>
+                          <input type=submit name=b1 value="Save">
+                          <input type=submit name=b1 value="Allsearch">
+              </tr>
+        </table>
+</body>
+<script>
+
+function a()
+{
+	f.t1.value=""
+	f.t2.value=""
+	f.t3.value=""
+	f.t4.value=""
+}
+
+function b()
+                {
+                   s=parseInt(f.t3.value)
+                   ns=s+s*.10
+                   f.t4.value=ns
+		}
+</script>
+
+

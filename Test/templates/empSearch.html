@@ -1,0 +1,24 @@
+
+<html>
+<body>
+ <table border="2">
+	<tr>
+ 		<th>emp id</th>
+		<th>name</th>
+	    <th>salarry</th>
+	    <th>n salarry</th>
+		
+	</tr>
+  	{%for col in data%}
+		<tr>
+			<td>{{col[0]}}</td>
+			<td>{{col[1]}}</td>
+			<td>{{col[2]}}</td>
+			<td>{{col[3]}}</td>
+		</tr>
+	{% endfor %}
+	<input type="button" value="Print" onclick="window.print()">
+	</table>
+	
+</body>
+</html>
